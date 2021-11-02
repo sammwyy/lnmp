@@ -2,14 +2,9 @@
 ###########################
 #          Nginx          #
 ###########################
-# 1.1 Add the source repository.
-echo deb http://nginx.org/packages/debian/buster nginx > /etc/apt/sources.list.d/nginx.list
-deb-src http://nginx.org/packages/debian/buster nginx >> /etc/apt/sources.list.d/nginx.list
-# 1.2 Add the signing key.
-curl -L https://nginx.org/keys/nginx_signing.key | sudo apt-key add -
-# 1.3 Update the package sources.
+# 1.1 Update the package sources.
 sudo apt update
-# 1.4 Install or upgrade nginx.
+# 1.2 Install or upgrade nginx.
 sudo apt install -y nginx
 sudo apt upgrade
 
