@@ -46,6 +46,8 @@ echo "   location ~ /\\.ht {"                             >> /etc/nginx/sites-av
 echo "       deny all;"                                   >> /etc/nginx/sites-available/default
 echo "   }"                                               >> /etc/nginx/sites-available/default
 echo "}"                                                  >> /etc/nginx/sites-available/default
+# 4.2 Setup example page
+wget https://github.com/sammwyy/lnmp/raw/main/index.php -O /var/www/html/index.php
 
 ###########################
 #         Restart         #
