@@ -31,7 +31,7 @@ echo "   listen 80 default_server;"                       >> /etc/nginx/sites-av
 echo "   listen [::]:80 default_server;"                  >> /etc/nginx/sites-available/default
 echo " "                                                  >> /etc/nginx/sites-available/default
 echo "   root /var/www/html;"                             >> /etc/nginx/sites-available/default
-echo "   index index.php index.html index.htm";           >> /etc/nginx/sites-available/default
+echo "   index index.php index.html index.htm;"           >> /etc/nginx/sites-available/default
 echo " "                                                  >> /etc/nginx/sites-available/default
 echo "   location / {"                                    >> /etc/nginx/sites-available/default
 echo "       try_files \$uri \$uri/ =404;"                >> /etc/nginx/sites-available/default
